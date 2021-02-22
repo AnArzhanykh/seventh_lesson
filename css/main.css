@@ -324,6 +324,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto/Roboto-Black.ttf"), url("../../fonts/Roboto/Roboto-Bold.ttf"), url("../../fonts/Roboto/Roboto-Light.ttf"), url("../../fonts/Roboto/Roboto-Medium.ttf"), url("../../fonts/Roboto/Roboto-Regular.ttf"), url("../../fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../../fonts/Raleway/Raleway-VariableFont_wght.ttf"), url("../../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
+
 .button {
   padding: 10px 32px;
   font-size: 16px;
