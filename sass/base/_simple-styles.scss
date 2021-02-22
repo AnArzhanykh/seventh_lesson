@@ -1,0 +1,57 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: $primary-color;
+    background-color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    
+}
+
+.active {
+    color: $active-color;
+}
+
+h1, h2, h3, h4,h5, h6 {
+    color: $secondary-color;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    
+}
+
+
+.link{
+    text-decoration: none;
+}
+
+.section{
+    margin-bottom: 94px;
+}
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.icon{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: currentColor;
+}
+
+.section-title{
+    font-size: 36px;
+    text-align: center;
+}
+
+

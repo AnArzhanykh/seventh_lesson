@@ -1,0 +1,199 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms $main-animation;
+
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    &.is-hidden .modal{
+        opacity: 0;
+        transform:  translate(-50%, -50%) scale(0.9);
+    }
+}
+
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    text-align: center;
+
+
+    background-color:$hero-color;
+    opacity: 1;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $main-animation, opacity 250ms $main-animation;
+
+    
+    &__title-main{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+    }
+    
+    &__form-label{
+        display: block;
+        margin-bottom: 28px;
+        position: relative;
+    }
+    
+    &__form-input{
+        height: 40px;
+        width: 100%;
+        padding-left: 42px;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: border-color 250ms $main-animation;
+    }
+    
+    &__title {
+        position: absolute;
+        left: 42px;
+        top: 50%;
+        display: inline-block;
+        transform: translateY(-50%);
+    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        transition: transform 250ms $main-animation, color 250ms $main-animation ;
+    }
+    
+    
+    &__form-input:focus {
+        border-color:$active-color;
+    }
+    
+    &__form-input:focus + &__title,
+    &__form-input:not(:placeholder-shown) + &__title {
+        transform: translateY(-36px) translateX(-25px);
+        color: $active-color;
+    }
+    
+    &__.form-input:focus ~ &__icon {
+        fill: $active-color;
+    }
+    
+    &__form-label &__icon {
+        position: absolute;
+        display: inline-block;
+        left: 20px;
+        top: 50%;
+        padding: 0;
+    
+        fill: black;
+        border-radius: 0px;
+        transform: translateY(-50%);
+        transition: fill 250ms $main-animation;
+    }
+    
+    .modal__coment{
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        resize: none;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+    
+        transition: border-color 250ms $main-animation;
+    }
+    
+    
+    &__coment:focus{
+        border-color: $active-color;
+    }
+    
+    &__checkbox-label{
+        display: block;
+        position: relative;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    
+    &__checkbox{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    
+    &__icon-checkbox{
+        width: 16px;
+        height: 15px;
+        display: inline-block;
+        border: 2px solid $secondary-color;
+        border-radius: 3px;
+        transition: background-color 250ms $main-animation, 
+        color 250ms $main-animation, 
+        background-image 250ms $main-animation,
+        border 250ms $main-animation;
+    }
+    
+    &__checkbox:checked + &__icon-checkbox{
+        background-color: $active-color;
+        border-color: transparent;
+        background-size: contain;
+        border-color: $active-color;
+        background-origin: content-box;
+        background-image: url('../images/icon_check.svg');
+    }
+    
+    &__checkbox:focus + &__icon-checkbox{
+        border: 2px solid $active-color;
+    }
+    
+    &__button{
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    
+    
+    &__icon-close {
+        position: absolute;
+        display: block;
+        top: 8px;
+        right: 8px;
+        padding: 0px;
+        margin: 0;
+        box-sizing: padding-box;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: $hero-color;
+        cursor: pointer;
+    
+        transition: fill 250ms $main-animation;
+    }
+    
+    &__icon-close:focus,
+    &__icon-close:hover {
+        fill: $active-color;
+    }
+}
