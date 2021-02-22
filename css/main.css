@@ -324,16 +324,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url("../../fonts/Roboto/Roboto-Black.ttf");
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url("../../fonts/Raleway/Raleway-VariableFont_wght.ttf");
-}
-
 .button {
   padding: 10px 32px;
   font-size: 16px;
