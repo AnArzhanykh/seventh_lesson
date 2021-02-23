@@ -1,15 +1,41 @@
+
+
 @font-face {
     font-family: 'Roboto';
-    src: url('../../fonts/Roboto/Roboto-Black.ttf'),
-        url('../../fonts/Roboto/Roboto-Bold.ttf'),
-        url('../../fonts/Roboto/Roboto-Light.ttf'),
-        url('../../fonts/Roboto/Roboto-Medium.ttf'),
-        url('../../fonts/Roboto/Roboto-Regular.ttf'),
-        url('../../fonts/Roboto/Roboto-Thin.ttf');
+    src: url("../../fonts/Roboto/Roboto-Regular.ttf"); 
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 @font-face {
+    font-family: 'Roboto';
+    src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../../fonts/Roboto/Roboto-Bold.ttf"); 
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../../fonts/Roboto/Roboto-Black.ttf"); 
+    font-weight: 900;
+    font-style: normal;
+    
+}
+
+
+
+@font-face {
     font-family: 'Raleway';
-    src: url('../../fonts/Raleway/Raleway-VariableFont_wght.ttf'),
-    url('../../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('../../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+    font-weight: 700;
+    font-style: normal;
 }
